@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="./index.html">Accueil</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <h2>Entrez les informations de l'oeuvre</h2>
+    <form action="">
+        <div>
+            <label for="name">Titre</label>
+            <input type="text" name="titre" required />
+        </div>
+        <div>
+            <label for="name">Artiste</label>
+            <input type="text" name="artiste" required />
+        </div>
+        <div>
+            <label for="date">Date</label>
+            <input type="date" name="date" required />
+        </div>
+        <div>
+            <label for="image">Image</label>
+            <input type="file" name="image" required />
+        </div>
+        <div>
+            <label for="mediaType">Type de média</label>
+            <input list="media_type" id="mediaType" name="mediaType" required />
+
+            <datalist id="media_type">
+                <option value="Littérature"></option>
+                <option value="Cinéma"></option>
+                <option value="Musique"></option>
+                <option value="Jeu"></option>
+            </datalist>
+        </div>
+        <div>
+            <label for="lien">Lien</label>
+            <input type="text" name="lien" required />
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" required />
+        </div>
+        <div>
+            <fieldset>
+                <legend>Inscription Newsletter</legend>
+              
+                <div>
+                  <input type="radio" id="yes" name="yes" checked />
+                  <label for="yes">Oui</label>
+                </div>
+              
+                <div>
+                  <input type="radio" id="yes" name="yes" />
+                  <label for="yes">Non</label>
+                </div>
+            </fieldset>
+        </div>
+
+        <div class="form-example">
+            <input type="submit" value="Subscribe!" />
+        </div>
+        
+    </form>
+</body>
+</html>
