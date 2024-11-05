@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 24px;
+    font-family: 'Georgia';
+}
+
+body {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+}
+
+header {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+nav {
+    position: static;
+    background-color: #FD5353;
+    height: 3rem;
+}
+
+nav ul {
+    position: relative;
+    display: flex;
+    margin-top: 1.5rem;
+    margin-left: 2rem;
+}
+
+nav > ul > li > a {
+    color: white;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    background-color: #5000FF;
+    padding-top: 2rem;
+}
+
+#sticker {
+    position: absolute;
+    width: 200px;
+    margin-left: 60%;
+}
+
+.large-text {
+    font-size: 2rem;
+    color: white;
+    margin-left: 4rem;
+    margin-bottom: 2rem;
+}
+
+/* pourquoi ça ne fonctionne pas ce truc ? */
+main > p:nth-child(4) {
+    color: pink;
+    margin-bottom: 2rem;
+}
+
+main > p {
+    color: white;
+    margin-top: 2rem;
+    margin-left: 4rem;
+}
+
+#getting-there {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+
+section > img {
+    width: 50%;
+}
+
+address {
+    display: inline-block;
+    text-align: center;
+    width: 49%;
+    color: white;
+}
+
