@@ -20,11 +20,11 @@ header {
     margin-right: auto;
     text-align: center;
     background-color: #7209b7;
-    font-size: 2rem;
 }
 
 header > h1 {
     padding: 1rem;
+    font-size: 2rem;
 }
 
 #overflow {
@@ -51,7 +51,7 @@ img {
 
 #boxes > div:nth-child(1) {
     background-color: #7209b7;
-    font-size: min(3vw, 2rem);
+    font-size: min(2rem, 3rw);
     width: 25%;
 }
 
