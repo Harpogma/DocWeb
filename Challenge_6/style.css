@@ -47,6 +47,7 @@ a {
 }
 
 main {
+    position: relative;
     background-color: #5000FF;
     padding-top: 2rem;
 }
@@ -54,7 +55,9 @@ main {
 #sticker {
     position: absolute;
     width: 200px;
-    margin-left: 60%;
+    top: -80px;
+    left: 80%;
+
 }
 
 .large-text {
@@ -69,8 +72,7 @@ main {
 }
 
 /* pourquoi ça ne fonctionne pas ce truc ? */
-main > p:nth-child(4) {
-    color: yellow;
+main > p:nth-of-type(4) {
     margin-bottom: 2rem;
 }
 
