@@ -1,0 +1,128 @@
+/* general rules */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 18px;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: black;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* header */
+.button {
+    display: inline-block;
+    width: calc(40% - 18px);
+    text-align: right;
+}
+
+.logo {
+    display: inline-block;
+    width: 20%;
+    margin-right: 10%;
+}
+
+header {
+    width: 100%;
+}
+
+nav {
+    display: inline-block;
+    color: white;
+    width: 30%;
+}
+
+li > a {
+    color: white;
+    text-decoration: none;
+}
+
+li > a:hover {
+    text-decoration: underline;
+}
+
+nav ul {
+    position: relative;
+    display: flex;
+}
+
+li {
+    list-style: none;
+    display: inline;
+    padding-right: 18px;
+}
+
+button {
+    position: relative;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    padding: 9px;
+}
+
+button:hover {
+    color: black;
+    background-color: white;
+}
+
+/* main */
+.big-image {
+    height: 33rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.path {
+    position: absolute;
+    width: min(100%, 1024px);
+    top: 1200px;
+    z-index: -1;
+}
+
+h1 {
+    color: white;
+    font-size: 4rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+main > p {
+    color: white;
+    font-size: 2rem;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+
+/* address section */
+.date {
+    margin-bottom: 1rem;
+}
+
+section {
+    background-color: white;
+    box-shadow: 0px 13px 19px -11px rgba(0,0,0,0.5);
+    font-weight: bold; /* ce n'était pas précisé bold mais on a vraiment l'impression que c'est en gras */
+}
+
+section > div {
+    padding: 2rem;
+}
+
+a {
+    color: black;
+}
+
+/* footer */
+footer {
+    color: white;
+    padding: 2rem 0;
+}
+
