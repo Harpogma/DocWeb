@@ -3,3 +3,93 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+img {
+    height: 100%;
+    object-fit: cover;
+}
+
+html {
+    font-size: 18px;
+}
+
+@font-face {
+    font-family: "Atacama_VAR";
+    src: url(./fonts/atacama-var.woff2);
+}
+
+@font-face {
+    font-family: "SwissNow_VAR";
+    src: url(./fonts/swissNow-var.woff2);
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    gap: 0.75rem;
+    height: 100vh;
+    
+}
+
+h1 {
+    font-size: 8rem;
+    line-height: 7.5rem;
+}
+
+#introduction {
+    background-color: hsl(315, 100%, 60%);
+}
+
+.upper-left {
+    grid-row: 2 /3;
+    grid-column: 1 / span 3;
+    text-align: center;
+}
+
+.upper-right {
+    grid-row: 2 /3;
+    grid-column: 10 / span 3;
+    text-align: center;
+}
+
+#introduction .center {
+    grid-row: 4 / 9;
+    grid-column: 3 / 10;
+    text-align: left;
+}
+
+.bottom-left {
+    grid-row: 11 / 12;
+    grid-column: 1 / span 3;
+    text-align: center;
+}
+
+.bottom-right {
+    grid-row: 11 / 12;
+    grid-column: 7 / 12;
+    text-align: center;
+}
+
+#second-page {
+    background: linear-gradient(hsl(315, 100%, 60%), white);
+}
+
+#second-page .center {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+}
+
+.card {
+    height: 200px;
+    opacity: 0.1;
+}
+
+#second-page > .center {
+    grid-row: 5 / 9;
+    grid-column: 3 / 11;
+    text-align: center;
+}
+
+
