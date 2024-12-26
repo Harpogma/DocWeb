@@ -29,7 +29,7 @@ section {
     grid-template-rows: repeat(12, 1fr);
     gap: 0.75rem;
     height: 100vh;
-    
+    align-items: center;
 }
 
 h1 {
@@ -39,6 +39,11 @@ h1 {
 
 #introduction {
     background-color: hsl(315, 100%, 60%);
+}
+
+.center {
+    grid-row: 3 / 11;
+    grid-column: 3 / 11;
 }
 
 .upper-left {
@@ -54,8 +59,6 @@ h1 {
 }
 
 #introduction .center {
-    grid-row: 4 / 9;
-    grid-column: 3 / 10;
     text-align: left;
 }
 
@@ -75,10 +78,9 @@ h1 {
     background: linear-gradient(hsl(315, 100%, 60%), white);
 }
 
-#second-page .center {
+#second-page div.center {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr;
 }
 
 .card {
@@ -86,10 +88,6 @@ h1 {
     opacity: 0.1;
 }
 
-#second-page > .center {
-    grid-row: 5 / 9;
-    grid-column: 3 / 11;
-    text-align: center;
-}
+
 
 
