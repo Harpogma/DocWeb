@@ -1,0 +1,116 @@
+.profile-card-container {
+  container-type: inline-size;
+  max-width: 100%;
+  min-width: 15rem;
+  border: solid black 1px;
+  .profile-card {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(4, 1fr);
+      grid-template-areas: 
+        "avatar"
+        "name"
+        "details"
+        "actions";
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 1rem;
+      @container (width >= 20rem) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+          "avatar name"
+          "details details"
+          "actions actions";
+        justify-content: center;
+        align-items: center;
+      }
+      @container (width >= 40rem) {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+          "avatar name details actions";
+        justify-content: center;
+        align-items: center;
+      }
+    
+    .profile-card--avatar {
+      display: flex;
+      grid-area: avatar;
+      justify-content: center;
+      img {
+        width: 125px;
+        position: relative;
+        bottom: 5px;
+      }
+      @container (width >= 20rem) {
+        grid-area: avatar;
+      }
+      @container (width >= 40rem) {
+        grid-area: avatar;
+        img {
+          width: 100px;
+          height: 100px;
+        }
+      }
+    }
+    .profile-card--name {
+      text-align: center;
+      grid-area: name;
+      h1 {
+        font-size: var(--fs-xl);
+        line-height: 1;
+      }
+      h2 {
+        font-size: var(--fs-lg);
+        color: var(--color-text-muted);
+        font-variation-settings: "wght" 400;
+      }
+      @container (width >= 20rem) {
+        grid-area: name;
+      }
+      @container (width >= 40rem) {
+        grid-area: name;
+      }
+    }
+    .profile-card--details {
+      display: flex;
+      grid-area: details;
+      flex-direction: column;
+      width: 100%;
+      div {
+        display: flex;
+        padding: 0.5rem;
+        align-items: center;
+        font-size: var(--fs-md);
+      }
+      div p {
+        padding-left: 1rem;
+      }
+      @container (width >= 20rem) {
+        grid-area: details;
+      }
+      @container (width >= 40rem) {
+        grid-area: details;
+      }
+    }
+    .profile-card--actions {
+      display: flex;
+      grid-area: actions;
+      flex-direction: column;
+      width: 100%;
+      padding: 0.5rem;
+      @container (width >= 20rem) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+      @container (width >= 40rem) {
+        grid-area: actions;
+      }
+    }
+    
+  }
+}
